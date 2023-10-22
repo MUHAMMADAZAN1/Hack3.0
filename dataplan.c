@@ -13,3 +13,7 @@ int main(){
      remainingDays=30-days;
     remainingPackage=monthlyPackage-usedPackage;
     dailyUsedPackage=usedPackage/days;
+     if(remainingPackage!=0){
+        remainingPackage=remainingPackage/remainingDays;
+     float exceedDailyUsed=dailyUsedPackage-averagePackageUsedDaily;
+     packageExceeding=30*dailyUsedPackage;
